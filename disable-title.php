@@ -34,7 +34,7 @@ if (!class_exists( 'disable_title' ) ) {
      * Delete starpage metavalue from Usermeta for all Users.
      */
     function disable_title_uninstall() {
-        //delete_option('backend_startpage');
+        $wpdb->query( "DELETE FROM $wpdb->postmeta WHERE meta_key = '_z8n-fs-disable-title-%';" );
     }
 
     register_uninstall_hook( __FILE__,  'disable_title_uninstall' );
