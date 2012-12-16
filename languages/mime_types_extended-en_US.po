@@ -1,0 +1,302 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mime_types_extended\n"
+"POT-Creation-Date: 2012-12-11 23:41+0100\n"
+"PO-Revision-Date: 2012-12-12 00:29+0100\n"
+"Last-Translator: Frarnk Staude <frank@staude.net>\n"
+"Language-Team: frank@staude.net <frank@staude.net>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_n;_e;__\n"
+"X-Poedit-Basepath: /Users/staude/Projekte/Wordpress Plugins/wp-content/"
+"plugins/mime-types-extended\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-mime-types-extended.php:44
+msgid "Mime types"
+msgstr "Mime types"
+
+#: class-mime-types-extended.php:122
+msgid "MIME Types settings"
+msgstr "MIME Types settings"
+
+#: class-mime-types-extended.php:123
+msgid "Activate mimetypes you want to use."
+msgstr "Activate mimetypes you want to use."
+
+#: class-mime-types-extended.php:131
+msgid "enable .asd files"
+msgstr "enable .asd files (Astound files)"
+
+#: class-mime-types-extended.php:135
+msgid "enable .dwg files"
+msgstr "enable .dwg files (AutoCAD files)"
+
+#: class-mime-types-extended.php:139
+msgid "enable .asn files"
+msgstr "enable .asn files (Astound files)"
+
+#: class-mime-types-extended.php:143
+msgid "enable .tsp files"
+msgstr "enable .tsp files (TSP files)"
+
+#: class-mime-types-extended.php:147
+msgid "enable .dxf files"
+msgstr "enable .dxf files (AutoCAD files)"
+
+#: class-mime-types-extended.php:151
+msgid "enable .spl files"
+msgstr "enable .spl files"
+
+#: class-mime-types-extended.php:155
+msgid "enable .ptlk files"
+msgstr "enable .ptlk files (Listenup files)"
+
+#: class-mime-types-extended.php:159
+msgid "enable .hqx files"
+msgstr "enable .hqx files (Macintosh binaryfiles)"
+
+#: class-mime-types-extended.php:163
+msgid "enable .mbd files"
+msgstr "enable .mbd files (Mbedlet files)"
+
+#: class-mime-types-extended.php:167 class-mime-types-extended.php:295
+msgid "enable .mif files"
+msgstr "enable .mif files (FrameMaker interchange format files)"
+
+#: class-mime-types-extended.php:171
+msgid "enable .hlp files"
+msgstr "enable .hlp files (Microsoft windows help files)"
+
+#: class-mime-types-extended.php:175
+msgid "enable .chm files"
+msgstr "enable .chm files (Microsoft windows help files)"
+
+#: class-mime-types-extended.php:179 class-mime-types-extended.php:291
+msgid "enable .bin files"
+msgstr "enable .bin files (executable files)"
+
+#: class-mime-types-extended.php:183
+msgid "enable .dll files"
+msgstr "enable .dll files (executable files)"
+
+#: class-mime-types-extended.php:187
+msgid "enable .oda files"
+msgstr "enable .oda files (Oda files)"
+
+#: class-mime-types-extended.php:191
+msgid "enable .ai files"
+msgstr "enable .ai files (Adobe PostScript files)"
+
+#: class-mime-types-extended.php:195
+msgid "enable .eps files"
+msgstr "enable .eps files (Adobe PostScript files)"
+
+#: class-mime-types-extended.php:199
+msgid "enable .ps files"
+msgstr "enable .ps files (Adobe PostScript files)"
+
+#: class-mime-types-extended.php:203
+msgid "enable .rtc files"
+msgstr "enable .rtc files (RTC files)"
+
+#: class-mime-types-extended.php:207
+msgid "enable .smp files"
+msgstr "enable .smp files (Studiom files)"
+
+#: class-mime-types-extended.php:211
+msgid "enable .tbk files"
+msgstr ".tbk Dateien erlauben (Toolbook-Dateien)"
+
+#: class-mime-types-extended.php:215
+msgid "enable .vmd files"
+msgstr ".vmd Dateien erlauben (Vocaltec Mediadesc-Dateien)"
+
+#: class-mime-types-extended.php:219
+msgid "enable .vmf files"
+msgstr ".vmf Dateien erlauben (Vocaltec Media-Dateien)"
+
+#: class-mime-types-extended.php:223
+msgid "enable .shtml files"
+msgstr ".shtml Dateien erlauben (XHTML-Dateien)"
+
+#: class-mime-types-extended.php:227
+msgid "enable .xhtml files"
+msgstr ".xhtml Dateien erlauben (XHTML-Dateien)"
+
+#: class-mime-types-extended.php:231
+msgid "enable .xml files"
+msgstr ".xml Dateien erlauben (XML-Dateien)"
+
+#: class-mime-types-extended.php:235
+msgid "enable .bcpio files"
+msgstr ".bcpio Dateien erlauben (BCPIO-Dateien)"
+
+#: class-mime-types-extended.php:239
+msgid "enable .z files"
+msgstr ".z Dateien erlauben (zlib-komprimierte Dateien)"
+
+#: class-mime-types-extended.php:243
+msgid "enable .cpio files"
+msgstr ".cpio Dateien erlauben (CPIO-Dateien)"
+
+#: class-mime-types-extended.php:247
+msgid "enable .csh files"
+msgstr ".csh Dateien erlauben (C-Shellscript-Dateien)"
+
+#: class-mime-types-extended.php:251
+msgid "enable .dcr files"
+msgstr ".dcr Dateien erlauben (Macromedia Director-Dateien)"
+
+#: class-mime-types-extended.php:255
+msgid "enable .dir files"
+msgstr ".dir Dateien erlauben (Macromedia Director-Dateien)"
+
+#: class-mime-types-extended.php:259
+msgid "enable .dxr files"
+msgstr ".dxr Dateien erlauben (Macromedia Director-Dateien)"
+
+#: class-mime-types-extended.php:263
+msgid "enable .dvi files"
+msgstr ".dvi Dateien erlauben (DVI-Dateien)"
+
+#: class-mime-types-extended.php:267
+msgid "enable .evy files"
+msgstr ".evyDateien erlauben (Envoy-Dateien)"
+
+#: class-mime-types-extended.php:271
+msgid "enable .gtar files"
+msgstr ".gtar Dateien erlauben (GNU tar-Archivdateien)"
+
+#: class-mime-types-extended.php:275
+msgid "enable .hdf files"
+msgstr ".hdr Dateien erlauben (HDF-Dateien)"
+
+#: class-mime-types-extended.php:279
+msgid "enable .php files"
+msgstr ".php Dateien erlauben (PHP-Dateien)"
+
+#: class-mime-types-extended.php:283
+msgid "enable .phtml files"
+msgstr ".phtml Dateien erlauben (PHP-Dateien)"
+
+#: class-mime-types-extended.php:287
+msgid "enable .latex files"
+msgstr ".latex Dateien erlauben (LaTeX-Quelldateien)"
+
+#: class-mime-types-extended.php:299
+msgid "enable .nc files"
+msgstr ".nc Dateien erlauben (Unidata CDF-Dateien)"
+
+#: class-mime-types-extended.php:303
+msgid "enable .cdf files"
+msgstr ".cdf Dateien erlauben (Unidata CDF-Dateien)"
+
+#: class-mime-types-extended.php:307
+msgid "enable .nsc files"
+msgstr ".nsc Dateien erlauben (NS Chat-Dateien)"
+
+#: class-mime-types-extended.php:311
+msgid "enable .sh files"
+msgstr ".sh Dateien erlauben (Bourne Shellscript-Dateien)"
+
+#: class-mime-types-extended.php:315
+msgid "enable .shar files"
+msgstr ".shar Dateien erlauben (Shell-Archivdateien)"
+
+#: class-mime-types-extended.php:319
+msgid "enable .cab files"
+msgstr ".cab Dateien erlauben (Flash Shockwave-Dateien)"
+
+#: class-mime-types-extended.php:323
+msgid "enable .spr files"
+msgstr ".spr Dateien erlauben (Sprite-Dateien)"
+
+#: class-mime-types-extended.php:327
+msgid "enable .sprite files"
+msgstr ".sprite Dateien erlauben (Sprite-Dateien)"
+
+#: class-mime-types-extended.php:331
+msgid "enable .sit files"
+msgstr ".sit Dateien erlauben (Stuffit-Dateien)"
+
+#: class-mime-types-extended.php:335
+msgid "enable .sca files"
+msgstr ".sca Dateien erlauben (Supercard-Dateien)"
+
+#: class-mime-types-extended.php:339
+msgid "enable .sv4cpio files"
+msgstr ".sv4cpio Dateien erlauben (CPIO-Dateien)"
+
+#: class-mime-types-extended.php:343
+msgid "enable .sv4crc files"
+msgstr ".sv4crc Dateien erlauben (CPIO-Dateien mit CRC)"
+
+#: class-mime-types-extended.php:347
+msgid "enable .tcl files"
+msgstr ".tcl Dateien erlauben (TCL Scriptdateien)"
+
+#: class-mime-types-extended.php:351
+msgid "enable .tex files"
+msgstr ".tex Dateien erlauben (TeX-Dateien)"
+
+#: class-mime-types-extended.php:355
+msgid "enable .texinfo files"
+msgstr ".texinfo Dateien erlauben (Texinfo-Dateien)"
+
+#: class-mime-types-extended.php:359
+msgid "enable .texi files"
+msgstr ".texi Dateien erlauben (Texinfo-Dateien)"
+
+#: class-mime-types-extended.php:363
+msgid "enable .t files"
+msgstr ".t Dateien erlauben (TROFF-Dateien (Unix))"
+
+#: class-mime-types-extended.php:367
+msgid "enable .tr files"
+msgstr ".tr Dateien erlauben (TROFF-Dateien (Unix))"
+
+#: class-mime-types-extended.php:371
+msgid "enable .roff files"
+msgstr ".roff Dateien erlauben (TROFF-Dateien (Unix))"
+
+#: class-mime-types-extended.php:375
+msgid "enable .man files"
+msgstr ".man Dateien erlauben (TROFF-Dateien mit MAN-Makros (Unix))"
+
+#: class-mime-types-extended.php:379
+msgid "enable .troff files"
+msgstr ".troff Dateien erlauben (TROFF-Dateien mit MAN-Makros (Unix))"
+
+#: class-mime-types-extended.php:383
+msgid "enable .ustar files"
+msgstr ".ustar Dateien erlauben (tar-Archivdateien (Posix))"
+
+#: class-mime-types-extended.php:388
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#~ msgid "Title settings"
+#~ msgstr "Titel ausblenden"
+
+#~ msgid "Disable title on homepage"
+#~ msgstr "Titel auf Startseite ausblenden"
+
+#~ msgid "Disable title on page/post"
+#~ msgstr "Titel auf Detailseite ausblenden"
+
+#~ msgid "Disable title on category page"
+#~ msgstr "Titel auf Kategorieseite ausblenden"
+
+#~ msgid "Disable title on archive page"
+#~ msgstr "Titel auf Archivseite ausblenden"
+
+#~ msgid "Startpage"
+#~ msgstr "Startseite"
+
+#~ msgid "Select your backend startpage."
+#~ msgstr "Wählen Sie die Startseite"
