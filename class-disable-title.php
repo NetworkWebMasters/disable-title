@@ -18,7 +18,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
 class disable_title {
-    
+        
     function __construct() {
         add_filter( 'the_title',        array ( 'disable_title', 'the_title'),10,2);
         add_action( 'admin_menu',       array ( 'disable_title', 'add_meta_box') );
@@ -72,6 +72,20 @@ class disable_title {
     function add_meta_box() {
         add_meta_box( 'disable_title', __('Title settings', 'disable-title'), array ('disable_title', 'disable_title_metabox' ), 'post' );
         add_meta_box( 'disable_title', __('Title settings', 'disable-title'), array ('disable_title', 'disable_title_metabox' ), 'page' );
+        // now register CPT 
+        $builtInPostTypes = array(
+            'post' => 'post',
+            'page' => 'page',
+            'attachment' => 'attachment' ,
+            'revision' => 'revision',
+            'nav_menu_item'=> 'nav_menu_item'
+        );
+        $post_types = get_post_types( '','names' ); 
+        foreach ( $post_types as $post_type ) {
+            if ( !in_array( $post_type, $builtInPostTypes ) ) {
+                add_meta_box( 'disable_title', __('Title settings', 'disable-title'), array ('disable_title', 'disable_title_metabox' ), $post_type );
+            }
+        }
     }
  
     function disable_title_metabox($post) {

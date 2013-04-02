@@ -3,8 +3,8 @@ Contributors:f.staude
 Donate link: http://www.staude.net/donate
 Tags: page, post, title, the_title
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 0.1
+Tested up to: 3.5.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -84,6 +84,9 @@ Wähle das Projekt "WP Plugin: Disable Title" und trag deinen Wunsch ein.
 
 
 == Changelog ==
+
+= 0.2 =
+0000024: Support for Custom Post Types
 
 = 0.1 =
 First version.
