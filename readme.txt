@@ -85,6 +85,9 @@ Wähle das Projekt "WP Plugin: Disable Title" und trag deinen Wunsch ein.
 
 == Changelog ==
 
+= 0.3 =
+0000025: language files falsch
+
 = 0.2 =
 0000024: Support for Custom Post Types
 
