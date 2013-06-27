@@ -4,7 +4,7 @@ Plugin Name: Disable Title
 Plugin URI: http://www.staude.net/wordpress/plugins/DisableTitle
 Description: Disable the title per page/post 
 Author: Frank Staude
-Version: 0.3.1
+Version: 0.4
 Text Domain: disable_title
 Domain Path: languages
 Author URI: http://www.staude.net/
@@ -36,7 +36,8 @@ if (!class_exists( 'disable_title' ) ) {
      * Delete starpage metavalue from Usermeta for all Users.
      */
     function disable_title_uninstall() {
-        $wpdb->query( "DELETE FROM $wpdb->postmeta WHERE meta_key = '_z8n-fs-disable-title-%';" );
+        global $wpdb;
+        $wpdb->query( "DELETE FROM $wpdb->postmeta WHERE meta_key LIKE '_z8n-fs-disable-title-%';" );
     }
 
     register_uninstall_hook( __FILE__,  'disable_title_uninstall' );
