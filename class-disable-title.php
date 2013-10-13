@@ -30,7 +30,10 @@ class disable_title {
         load_plugin_textdomain('disable_title', false, dirname( plugin_basename( __FILE__ )) . '/languages/'  ); 
     }
     
-    function the_title( $title, $id) { 
+    function the_title( $title, $id = false ) {
+        if ( !$id ) {
+            return $title;
+        }
         if (!is_admin() ) { // no title replacement in backend
             $page       = get_post_meta( $id, '_z8n-fs-disable-title-detail', true );
             $category   = get_post_meta( $id, '_z8n-fs-disable-title-category', true );
