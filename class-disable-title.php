@@ -26,11 +26,11 @@ class disable_title {
         add_action( 'plugins_loaded',   array ( 'disable_title', 'load_translations' ) );
     }
     
-    function load_translations() {
+    static public function load_translations() {
         load_plugin_textdomain('disable_title', false, dirname( plugin_basename( __FILE__ )) . '/languages/'  ); 
     }
     
-    function the_title( $title, $id = false ) {
+    static public function the_title( $title, $id = false ) {
         if ( !$id ) {
             return $title;
         }
@@ -72,7 +72,7 @@ class disable_title {
         return $title;
     }
     
-    function add_meta_box() {
+    static public function add_meta_box() {
         add_meta_box( 'disable_title', __('Title settings', 'disable_title'), array ('disable_title', 'disable_title_metabox' ), 'post' );
         add_meta_box( 'disable_title', __('Title settings', 'disable_title'), array ('disable_title', 'disable_title_metabox' ), 'page' );
         // now register CPT 
@@ -91,7 +91,7 @@ class disable_title {
         }
     }
  
-    function disable_title_metabox($post) {
+    static public function disable_title_metabox($post) {
         $detail = get_post_meta( $post->ID, '_z8n-fs-disable-title-detail', true );
         $category = get_post_meta( $post->ID, '_z8n-fs-disable-title-category', true );
         $archive = get_post_meta( $post->ID, '_z8n-fs-disable-title-archive', true );
@@ -109,12 +109,12 @@ class disable_title {
         <?php
     }
  
-    function save_meta( $post_id ) {
+    static public function save_meta( $post_id ) {
         if ( isset( $_POST[ 'z8n-fs-disable-title-posts' ] ) ) {
-            $detail = $_POST['z8n-fs-disable-title-detail'] ? 1 : 0;
-            $category = $_POST['z8n-fs-disable-title-category'] ? 1 : 0;
-            $archive = $_POST['z8n-fs-disable-title-archive'] ? 1 : 0 ;
-            $home = $_POST['z8n-fs-disable-title-home'] ? 1 : 0;
+            $detail = isset( $_POST['z8n-fs-disable-title-detail'] ) ? 1 : 0;
+            $category = isset( $_POST['z8n-fs-disable-title-category'] ) ? 1 : 0;
+            $archive = isset( $_POST['z8n-fs-disable-title-archive'] ) ? 1 : 0 ;
+            $home = isset( $_POST['z8n-fs-disable-title-home'] ) ? 1 : 0;
 
             // Update values
             update_post_meta($post_id, '_z8n-fs-disable-title-home', $home);
