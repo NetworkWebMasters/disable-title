@@ -4,14 +4,14 @@ Plugin Name: Disable Title
 Plugin URI: http://www.staude.net/wordpress/plugins/DisableTitle
 Description: Disable the title per page/post 
 Author: Frank Staude
-Version: 0.6
+Version: 0.7
 Text Domain: disable_title
 Domain Path: languages
 Author URI: http://www.staude.net/
 Compatibility: WordPress 3.7.1
 */
 
-/*  Copyright 2012  Frank Staude  (email : frank@staude.net)
+/*  Copyright 2012-2013  Frank Staude  (email : frank@staude.net)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
