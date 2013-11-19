@@ -4,7 +4,7 @@ Donate link: http://www.staude.net/donate
 Tags: page, post, title, the_title
 Requires at least: 3.0
 Tested up to: 3.7.1
-Stable tag: 0.7
+Stable tag: 0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -84,6 +84,9 @@ Wähle das Projekt "WP Plugin: Disable Title" und trag deinen Wunsch ein.
 
 
 == Changelog ==
+
+= 0.8 =
+- filter recent posts widget to disable post on startpage. Thanks to Gert Jan Zeilstra for reporting the issue.
 
 = 0.7 =
 - 0000050: disable in menu. 
