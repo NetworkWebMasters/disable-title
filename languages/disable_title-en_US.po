@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Disable Title v0.7\n"
+"Project-Id-Version: Disable Title v0.9\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-03 21:11+0100\n"
-"PO-Revision-Date: 2013-11-13 21:50:00+0000\n"
+"PO-Revision-Date: 2013-12-05 08:11:46+0000\n"
 "Last-Translator: Frank Staude <frank@staude.net>\n"
 "Language-Team: frank@staude.net <frank@staude.net>\n"
 "MIME-Version: 1.0\n"
@@ -20,29 +20,29 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: class-disable-title.php:112
-#: class-disable-title.php:113
-#: class-disable-title.php:125
+#: class-disable-title.php:147
+#: class-disable-title.php:148
+#: class-disable-title.php:160
 #@ disable_title
 msgid "Title settings"
 msgstr "Title settings"
 
-#: class-disable-title.php:144
+#: class-disable-title.php:180
 #@ disable_title
 msgid "Disable title on homepage"
 msgstr "Disable title on homepage"
 
-#: class-disable-title.php:146
+#: class-disable-title.php:182
 #@ disable_title
 msgid "Disable title on page/post"
 msgstr "Disable title on page/post"
 
-#: class-disable-title.php:148
+#: class-disable-title.php:184
 #@ disable_title
 msgid "Disable title on category page"
 msgstr "Disable title on category page"
 
-#: class-disable-title.php:150
+#: class-disable-title.php:186
 #@ disable_title
 msgid "Disable title on archive page"
 msgstr "Disable title on archive page"
@@ -77,14 +77,19 @@ msgstr ""
 msgid "http://www.staude.net/"
 msgstr ""
 
-#: class-disable-title.php:152
+#: class-disable-title.php:188
 #@ disable_title
 msgid "Disable title on menu"
 msgstr "Disable title on menu"
 
+#: class-disable-title.php:190
+#@ disable_title
+msgid "Disable title on widgets"
+msgstr "Disable title on widgets"
+
 #. translators: plugin header field 'Version'
 #: disable-title.php:0
 #@ disable_title
-msgid "0.7"
+msgid "0.9"
 msgstr ""
 

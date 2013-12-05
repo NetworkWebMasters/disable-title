@@ -28,6 +28,8 @@ class disable_title {
         add_action( 'plugins_loaded',           array( 'disable_title', 'load_translations' ) );
         add_filter( 'wp_get_nav_menu_items',    array( 'disable_title', 'filter_menu' ), 10, 3 );
         add_filter( 'widget_posts_args',        array( 'disable_title', 'filter_widget' ) );
+        add_filter( 'wp_list_pages_excludes',   array( 'disable_title', 'filter_default_menu' ), 10, 1 );
+        
     }
 
     static public function filter_widget( $args ) {
@@ -64,6 +66,24 @@ class disable_title {
         return ( $items );
     }
 
+    /**
+     * filter to filter th wordpress default menu
+     * 
+     * @global object $wpdb
+     * @param array $args
+     * @return array
+     */
+    static public function filter_default_menu( $args ) {
+        global $wpdb;
+        
+        $idArray = array();
+        $ids = $wpdb->get_results( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_z8n-fs-disable-title-menu' AND meta_value = 1" );
+        foreach ( $ids as $idObj ) {
+            $idArray[] = $idObj->post_id;
+        }
+        return ($idArray);
+    }    
+    
     /**
      * load texttranslations for plugin
      */
