@@ -54,7 +54,6 @@ class disable_title {
      * @return type
      */
     static public function filter_menu( $items, $menu, $args ) {
-        var_dump($items);exit;
         foreach ( $items as $key => $item ) {
             $id = $item->object_id;
             $unvisible = get_post_meta( $id, '_z8n-fs-disable-title-menu', true );
