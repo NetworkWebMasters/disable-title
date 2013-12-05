@@ -70,7 +70,7 @@ Bitte geh auf die Seite http://bugs.staude.net und melde dich dort an.
 
 Wähle das Projekt "WP Plugin: Disable Title" und melde den Fehler.
 
-= Ich möchte eine neue Funktion vorschlage  =
+= Ich möchte eine neue Funktion vorschlagen  =
 
 Bitte geh auf die Seite http://bugs.staude.net und melde dich dort an.
 
