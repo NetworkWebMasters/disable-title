@@ -85,6 +85,10 @@ Wähle das Projekt "WP Plugin: Disable Title" und trag deinen Wunsch ein.
 
 == Changelog ==
 
+= 0.9 =
+- Add feature to disable in widgets
+- fix: get_title replacement only within the_loop
+
 = 0.8 =
 - filter recent posts widget to disable post on startpage. Thanks to Gert Jan Zeilstra for reporting the issue.
 

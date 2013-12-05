@@ -33,17 +33,14 @@ class disable_title {
     static public function filter_widget( $args ) {
         global $wpdb;
         
-        if ( is_home() ) {
-            $idArray = array();
-            $ids = $wpdb->get_results( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_z8n-fs-disable-title-home' AND meta_value = 1" );
-            foreach ( $ids as $idObj ) {
-                $idArray[] = $idObj->post_id;
-            }
-            if ( count( $idArray ) > 0 ) {
-                $args[ 'post__not_in' ] = $idArray;
-            }
+        $idArray = array();
+        $ids = $wpdb->get_results( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_z8n-fs-disable-title-widget' AND meta_value = 1" );
+        foreach ( $ids as $idObj ) {
+            $idArray[] = $idObj->post_id;
         }
-        
+        if ( count( $idArray ) > 0 ) {
+            $args[ 'post__not_in' ] = $idArray;
+        }
         
         return ($args);
     }
@@ -57,6 +54,7 @@ class disable_title {
      * @return type
      */
     static public function filter_menu( $items, $menu, $args ) {
+        var_dump($items);exit;
         foreach ( $items as $key => $item ) {
             $id = $item->object_id;
             $unvisible = get_post_meta( $id, '_z8n-fs-disable-title-menu', true );
@@ -82,7 +80,7 @@ class disable_title {
      * @return string
      */
     static public function the_title( $title, $id = false ) {
-        if ( ! $id ) {
+        if ( ! $id || ! in_the_loop() ) {
             return $title;
         }
         if ( ! is_admin() ) { // no title replacement in backend
@@ -156,6 +154,7 @@ class disable_title {
         $archive =  get_post_meta($post->ID, '_z8n-fs-disable-title-archive',   true );
         $home =     get_post_meta($post->ID, '_z8n-fs-disable-title-home',      true );
         $menu =     get_post_meta($post->ID, '_z8n-fs-disable-title-menu',      true );
+        $widget =   get_post_meta($post->ID, '_z8n-fs-disable-title-widget',    true );
         ?>
         <input type="hidden" name="z8n-fs-disable-title-posts" value="1">
         <input id="z8n-fs-disable-title-home" type="checkbox" <?php if ( $home == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-home" value="1">
@@ -168,6 +167,8 @@ class disable_title {
         <?php _e('Disable title on archive page', 'disable_title'); ?><br />
         <input id="z8n-fs-disable-title-menu" type="checkbox" <?php if ( $menu == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-menu" value="1">
         <?php _e('Disable title on menu', 'disable_title'); ?><br />
+        <input id="z8n-fs-disable-title-widget" type="checkbox" <?php if ( $widget == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-widget" value="1">
+        <?php _e('Disable title on widgets', 'disable_title'); ?><br />
         <?php
     }
 
@@ -183,13 +184,14 @@ class disable_title {
             $archive =  isset( $_POST[ 'z8n-fs-disable-title-archive' ] ) ? 1 : 0;
             $home =     isset( $_POST[ 'z8n-fs-disable-title-home' ] ) ? 1 : 0;
             $menu =     isset( $_POST[ 'z8n-fs-disable-title-menu' ] ) ? 1 : 0;
-
+            $widget =   isset( $_POST[ 'z8n-fs-disable-title-widget' ] ) ? 1 : 0;
             // Update values
             update_post_meta( $post_id, '_z8n-fs-disable-title-home', $home );
             update_post_meta( $post_id, '_z8n-fs-disable-title-detail', $detail );
             update_post_meta( $post_id, '_z8n-fs-disable-title-category', $category );
             update_post_meta( $post_id, '_z8n-fs-disable-title-archive', $archive );
             update_post_meta( $post_id, '_z8n-fs-disable-title-menu', $menu );
+            update_post_meta( $post_id, '_z8n-fs-disable-title-widget', $widget );
         }
     }
 
