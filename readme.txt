@@ -82,6 +82,7 @@ Wähle das Projekt "WP Plugin: Disable Title" und trag deinen Wunsch ein.
 
 == Screenshots ==
 
+1. The settings dialog
 
 == Changelog ==
 
