@@ -8,7 +8,7 @@ Version: 0.9
 Text Domain: disable_title
 Domain Path: languages
 Author URI: http://www.staude.net/
-Compatibility: WordPress 3.7.1
+Compatibility: WordPress 4.0
 */
 
 /*  Copyright 2012-2013  Frank Staude  (email : frank@staude.net)
