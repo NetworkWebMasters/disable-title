@@ -88,7 +88,7 @@ class disable_title {
      * load texttranslations for plugin
      */
     static public function load_translations() {
-        load_plugin_textdomain( 'disable_title', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+        load_plugin_textdomain( 'disable-title', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
     }
 
     /**
@@ -144,8 +144,8 @@ class disable_title {
      * add a metabox to page/post/cpt
      */
     static public function add_meta_box() {
-        add_meta_box( 'disable_title', __( 'Title settings', 'disable_title' ), array( 'disable_title', 'disable_title_metabox' ), 'post' );
-        add_meta_box( 'disable_title', __( 'Title settings', 'disable_title' ), array( 'disable_title', 'disable_title_metabox' ), 'page' );
+        add_meta_box( 'disable_title', __( 'Title settings', 'disable-title' ), array( 'disable_title', 'disable_title_metabox' ), 'post' );
+        add_meta_box( 'disable_title', __( 'Title settings', 'disable-title' ), array( 'disable_title', 'disable_title_metabox' ), 'page' );
         // now register CPT 
         $builtInPostTypes = array(
             'post' => 'post',
@@ -157,7 +157,7 @@ class disable_title {
         $post_types = get_post_types( '', 'names' );
         foreach ( $post_types as $post_type ) {
             if ( ! in_array( $post_type, $builtInPostTypes ) ) {
-                add_meta_box( 'disable_title', __( 'Title settings', 'disable_title' ), array( 'disable_title', 'disable_title_metabox' ), $post_type );
+                add_meta_box( 'disable_title', __( 'Title settings', 'disable-title' ), array( 'disable_title', 'disable_title_metabox' ), $post_type );
             }
         }
     }
@@ -177,17 +177,17 @@ class disable_title {
         ?>
         <input type="hidden" name="z8n-fs-disable-title-posts" value="1">
         <input id="z8n-fs-disable-title-home" type="checkbox" <?php if ( $home == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-home" value="1">
-        <?php _e('Disable title on homepage', 'disable_title'); ?><br />
+        <?php _e('Disable title on homepage', 'disable-title'); ?><br />
         <input id="z8n-fs-disable-title-detail" type="checkbox" <?php if ( $detail == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-detail" value="1">
-        <?php _e('Disable title on page/post', 'disable_title'); ?><br />
+        <?php _e('Disable title on page/post', 'disable-title'); ?><br />
         <input id="z8n-fs-disable-title-category" type="checkbox" <?php if ( $category == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-category" value="1">
-        <?php _e('Disable title on category page', 'disable_title'); ?><br />
+        <?php _e('Disable title on category page', 'disable-title'); ?><br />
         <input id="z8n-fs-disable-title-archive" type="checkbox" <?php if ( $archive == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-archive" value="1">
-        <?php _e('Disable title on archive page', 'disable_title'); ?><br />
+        <?php _e('Disable title on archive page', 'disable-title'); ?><br />
         <input id="z8n-fs-disable-title-menu" type="checkbox" <?php if ( $menu == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-menu" value="1">
-        <?php _e('Disable title on menu', 'disable_title'); ?><br />
+        <?php _e('Disable title on menu', 'disable-title'); ?><br />
         <input id="z8n-fs-disable-title-widget" type="checkbox" <?php if ( $widget == 1 ) echo 'checked="checked"'; ?> name="z8n-fs-disable-title-widget" value="1">
-        <?php _e('Disable title on widgets', 'disable_title'); ?><br />
+        <?php _e('Disable title on widgets', 'disable-title'); ?><br />
         <?php
     }
 
