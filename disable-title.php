@@ -9,6 +9,8 @@ Text Domain: disable-title
 Domain Path: languages
 Author URI: http://www.staude.net/
 Compatibility: WordPress 4.3.1
+GitHub Plugin URI: https://github.com/staude/disable-title
+GitHub Branch: master
 */
 
 /*  Copyright 2012-2015  Frank Staude  (email : frank@staude.net)
@@ -33,7 +35,7 @@ if (!class_exists( 'disable_title' ) ) {
     include_once dirname( __FILE__ ) .'/class-disable-title.php';
 
     /**
-     * Delete starpage metavalue from Usermeta for all Users.
+     * Delete metavalue from postmeta for all posts.
      */
     function disable_title_uninstall() {
         global $wpdb;
